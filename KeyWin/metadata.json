@@ -1,0 +1,17 @@
+{
+    "KPackageStructure": "KWin/Script",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "ptousig@outlook.com",
+                "Name": "Patrick Tousignant",
+            }
+        ],
+        "Description": "Moving and switching windows using the keyboard",
+        "Icon": "preferences-system-windows-script-test",
+        "Id": "keywin",
+        "License": "LGPL-2.1-or-later",
+        "Name": "Keyboard Window Movement and Navigation",
+    },
+    "X-Plasma-API": "javascript"
+}
