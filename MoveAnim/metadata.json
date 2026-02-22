@@ -1,0 +1,35 @@
+{
+    "KPackageStructure": "KWin/Script",
+    "KPlugin": {
+        "Name": "Geometry Change",
+        "Name[sl]": "Sprememba geometrije",
+        "Name[nl]": "Afmetingen aanpassen",
+        "Description": "Animation for windows being moved or resized by programs or scripts",
+        "Description[sl]": "Animacija za okna, ki jih preoblikujejo programi ali skripte",
+        "Description[nl]": "Toon een animatie als een venster wordt verplaatst of van grootte wijzigt door een programma of script",
+        "Icon": "preferences-system-windows-script-test",
+        "Category": "Appearance",
+        "Authors": [
+            {
+                "Email": "peter.fajdiga@gmail.com",
+                "Name": "Peter Fajdiga"
+            },
+            {
+                "Email": "ptousig@outlook.com",
+                "Name": "Patrick Tousignant"
+            }
+        ],
+        "Id": "MoveAnim",
+        "License": "GPLv3",
+        "Version": "1.6",
+        "EnabledByDefault": false,
+        "ServiceTypes": ["KWin/Effect"]
+    },
+    "X-KDE-ConfigModule": "kcm_kwin4_genericscripted",
+    "X-KDE-Ordering": "60",
+    "X-KDE-PluginKeyword": "MoveAnim",
+    "X-KWin-Config-TranslationDomain": "kwin_effects",
+    "X-Plasma-API": "javascript",
+    "X-Plasma-MainScript": "code/main.js",
+    "ServiceName": "kwin"
+}
