@@ -16,5 +16,4 @@ while inotifywait -e close_write $SRC/$SCRIPT/contents/code/main.js; do
 	qdbus org.kde.KWin /Scripting loadScript $SCRIPT
 	qdbus org.kde.KWin /Scripting start
 	qdbus org.kde.KWin /KWin reconfigure
-	echo watch.sh: Reloaded.
 done

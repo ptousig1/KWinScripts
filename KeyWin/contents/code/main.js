@@ -17,6 +17,8 @@ registerShortcut("KeyWin Resize Right", "Enlarge the active window size by movin
 registerShortcut("KeyWin Resize Up", "Reduce the active window size by moving the bottom edge upward", "Meta+Ctrl+Up", OnResizeUp);
 registerShortcut("KeyWin Resize Down", "Enlarge the active window size by moving the bottom edge downward", "Meta+Ctrl+Down", OnResizeDown);
 
+registerShortcut("KeyWin Close Window", "Close currently active window", "Meta+Q", OnWinQ);
+
 // ------------------------------------------------------------------------------------
 /*
 let g_panels = new Array();
@@ -313,6 +315,14 @@ function OnResizeDown()
 
     win.frameGeometry = { x: g.x, y: g.y, height: h, width: g.width };
     print("Window moved.");
+	}
+
+function OnWinQ()
+	{
+	print("OnWinQ...");
+    const win = workspace.activeWindow;
+    if (win)
+		win.closeWindow();
 	}
 
 print("Loaded.");
